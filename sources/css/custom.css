@@ -1,0 +1,9 @@
+.auction-slider .slick-track {
+    display: flex;
+    gap: 1px
+}
+
+.featured-slider .slick-track {
+    display: flex;
+    gap: 65px;
+}

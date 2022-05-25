@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autodent | Landing Page</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+</head>
+<body class="font-poppins font-normal text-base">
+    <header class="relative text-white before:right-0 before:absolute before:top-0 before:w-full before:h-full before:z-0 before:bg-black before:bg-opacity-60" style="background: url(images/header-bg.png);">
+        <nav class="flex justify-between items-center px-16 mb-24 relative z-10">
+            <img class="w-[86px]" src="images/logo.svg">
+            <div class="flex gap-8 text-sm">
+                <a href="how-it-works.html">How it works</a>
+                <a href="auctions.html#">Auctions</a>
+                <a href="inventory.html#">Inventory</a>
+                <a href="pricing.html">Our Pricing</a>
+                <a href="services.html">Services</a>
+            </div>
+            <div class="flex gap-4">
+                <a class="bg-brand-blue px-5 py-2 text-sm cursor-pointer border border-transparent hover:border-white hover:bg-transparent transition-all duration-300 ease-out">Register</a>
+                <a class="bg-transparent border text-sm border-white px-6 py-2 cursor-pointer hover:bg-white hover:text-brand-blue transition-all duration-300 ease-out">Sign In</a>
+            </div>
+        </nav>
+        <div class="px-16 pb-20 flex relative justify-between z-10">
+            <div class="w-6/12">
+                <h1 class="mb-6 font-bold text-[62px] leading-[72px]"><span class="text-brand-blue">Autodent;</span><br> Luxury, Sport &<br> Heavy-duty</h1>
+                <p class="font-light mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames eget sem viverra nunc dui consequat et. Eget sit urna consectetur sem non massa. Mus mauris, vitae et ut cras cras lacus risus cras.</p>
+                <a class="flex w-max gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border-2 border-transparent hover:border-white hover:bg-transparent transition-all duration-300 ease-out">
+                    Start Bidding
+                    <img src="images/right-arrow.svg">
+                </a>
+            </div>
+            <form class="w-5/12 items-center flex">
+                <div class="relative">
+                    <input class="bg-transparent py-5 border border-white focus:outline-none px-6 max-w-full w-[490px] focus:border-brand-blue transition-all duration-300 ease-out" placeholder="Search Inventory by Make, Model, VIN and More..." type="text">
+                    <img class="absolute right-10 top-1/2 translate-x-1/2 -translate-y-1/2" src="images/search.png">
+                </div>
+            </form>
+        </div>
+        <div class="flex relative z-10 mb-8">
+            <p class="flex items-center w-52 pl-16 pr-12 bg-[#7C7C7C4D] bg-opacity-30 backdrop-blur-sm font-semibold py-6 text-[#FF9900] min-w-max">Live Auctions</p>
+            <div class="slider-arrows absolute z-10 -top-[50px] right-8 flex gap-2"></div>
+            <div class="auction-slider overflow-hidden">
+                <div class="bg-brand-blue !flex items-center pl-4 px-5">
+                    <img class="h-20 w-auto mr-[2px] ml-2" src="images/car-1.png">
+                    <p class="font-bold text-sm max-w-[130px] mr-5">Mercedes Benz G-Wagon AMG 56</p>
+                    <span class="block border-opacity-50 border-l-[0.2px] h-9 border-white mr-5"></span>
+                    <div class="pr-5">
+                        <p class="text-xs">Current Bid</p>
+                        <p class="font-medium text-[22px]">$50,000</p>
+                    </div>
+                </div>
+                <div class="bg-[#5E5E5E] !flex items-center pl-4 px-5">
+                    <img class="h-20 w-auto mr-[2px]" src="images/car-2.png">
+                    <p class="font-bold text-sm max-w-[130px] ml-2 mr-5">Range Rover Sport HSE 2019</p>
+                    <span class="block border-opacity-50 border-l-[0.2px] h-9 border-white mr-5"></span>
+                    <div class="pr-5">
+                        <p class="text-xs">Current Bid</p>
+                        <p class="font-medium text-[22px]">$60,000</p>
+                    </div>
+                </div>
+                <div class="bg-[#5E5E5E] !flex items-center pl-4 px-5">
+                    <img class="h-20 w-auto mr-[2px]" src="images/car-3.png">
+                    <p class="font-bold text-sm max-w-[130px] ml-2 mr-5">Audi Q8 2020 Sport</p>
+                    <span class="block border-opacity-50 border-l-[0.2px] h-9 border-white mr-5"></span>
+                    <div class="pr-5">
+                        <p class="text-xs">Current Bid</p>
+                        <p class="font-medium text-[22px]">$60,000</p>
+                    </div>
+                </div>
+                <div class="bg-[#5E5E5E] !flex items-center pl-4 px-5">
+                    <img class="h-20 w-auto mr-[2px]" src="images/car-2.png">
+                    <p class="font-bold text-sm max-w-[130px] ml-2 mr-5">Range Rover Sport HSE 2019</p>
+                    <span class="block border-opacity-50 border-l-[0.2px] h-9 border-white mr-5"></span>
+                    <div class="pr-5">
+                        <p class="text-xs">Current Bid</p>
+                        <p class="font-medium text-[22px]">$60,000</p>
+                    </div>
+                </div>
+                <div class="bg-[#5E5E5E] !flex items-center pl-4 px-5">
+                    <img class="h-20 w-auto mr-[2px]" src="images/car-2.png">
+                    <p class="font-bold text-sm max-w-[130px] ml-2 mr-5">Range Rover Sport HSE 2019</p>
+                    <span class="block border-opacity-50 border-l-[0.2px] h-9 border-white mr-5"></span>
+                    <div class="pr-5">
+                        <p class="text-xs">Current Bid</p>
+                        <p class="font-medium text-[22px]">$60,000</p>
+                    </div>
+                </div>
+                <div class="bg-[#5E5E5E] !flex items-center pl-4 px-5">
+                    <img class="h-20 w-auto mr-[2px]" src="images/car-2.png">
+                    <p class="font-bold text-sm max-w-[130px] ml-2 mr-5">Range Rover Sport HSE 2019</p>
+                    <span class="block border-opacity-50 border-l-[0.2px] h-9 border-white mr-5"></span>
+                    <div class="pr-5">
+                        <p class="text-xs">Current Bid</p>
+                        <p class="font-medium text-[22px]">$60,000</p>
+                    </div>
+                </div>
+                <div class="bg-[#5E5E5E] !flex items-center pl-4 px-5">
+                    <img class="h-20 w-auto mr-[2px]" src="images/car-2.png">
+                    <p class="font-bold text-sm max-w-[130px] ml-2 mr-5">Range Rover Sport HSE 2019</p>
+                    <span class="block border-opacity-50 border-l-[0.2px] h-9 border-white mr-5"></span>
+                    <div class="pr-5">
+                        <p class="text-xs">Current Bid</p>
+                        <p class="font-medium text-[22px]">$60,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative z-10 pb-8 flex items-center flex-col">
+            <img class="mb-2 w-8" src="images/mouse.png">
+            <p>Scroll down</p>
+        </div>
+    </header>
+
+    <main class="text-black pt-6">
+        <section class="px-16 py-16 mb-20">
+            <div class="flex">
+                <h2 class="text-brand-blue font-bold text-[42px] mb-12">Featured Vehicles</h2>
+            </div>
+            <div class="featured-slider">
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <div class="w-[256px] h-[159px]">
+                            <img class="w-[256px]" src="images/car-4.png">
+                        </div>
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Toyota Camry Sports XSE (2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <div class="w-[256px] h-[159px]">
+                            <img class="w-[256px]" src="images/car-5.png">
+                        </div>
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Lexus Sports ES250 (2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <div class="w-[256px] h-[159px]">
+                            <img class="w-[256px]" src="images/car-6.png">
+                        </div>
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Toyota Land Crusier SE(2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <div class="w-[256px] h-[159px]">
+                            <img class="w-[256px]" src="images/car-7.png">
+                        </div>
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">BMW X5 (2017)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <img class="w-[256px]" src="images/car-4.png">
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Toyota Camry Sports XSE (2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <img class="w-[256px]" src="images/car-4.png">
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Toyota Camry Sports XSE (2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <img class="w-[256px]" src="images/car-4.png">
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Toyota Camry Sports XSE (2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <img class="w-[256px]" src="images/car-4.png">
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Toyota Camry Sports XSE (2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col mb-5">
+                        <img class="w-[256px]" src="images/car-4.png">
+                        <div class="flex max-w-[256px] gap-2">
+                            <a class="w-1/4 border-2 border-brand-blue focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                            <a class="w-1/4 border-[0.5px] border-black border-opacity-50 focus:border-brand-blue focus:border-opacity-1 cursor-pointer"><img src="images/car-4.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px] mb-8">
+                        <p class="font-semibold">Toyota Camry Sports XSE (2022)</p>
+                        <p class="text-sm">Location: Houston, Texas</p>
+                        <p class="text-sm">Lot <span class="font-semibold">#42889725</span></p>
+                        <p class="text-sm">Current Bid: <span class="text-brand-blue font-semibold text-lg">$75,000</span></p>
+                    </div>
+                    <div>
+                        <a class="flex items-center justify-center mb-[10px] text-white w-full gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-black hover:bg-transparent transition-all duration-300 ease-out">View Details</a>
+                        <a class="flex items-center justify-center text-black w-full gap-4 bg-white px-6 py-4 text-sm cursor-pointer border border-brand-blue hover:text-white hover:border-brand-blue hover:bg-brand-blue transition-all duration-300 ease-out">Add To Watchlist</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#F9F9F9] px-16 pt-12 pb-24">
+            <p class="text-center mb-2">How it works</p>
+            <p class="font-semibold text-[32px] text-center">Let's get that Ride</p>
+            <div class="steps-slider mt-11">
+                <div class="w-[893px] mr-10 max-w-full">
+                    <p class="text-brand-blue font-bold mb-5">Step 1</p>
+                    <div class="flex text-white bg-brand-blue py-12 px-9 gap-8">
+                        <div class="w-3/12">
+                            <img class="w-[210px] mb-4" src="images/flag.png">
+                            <h5 class="font-extrabold text-xl max-w-[210px]">Place a Bid Or Post an Auction</h5>
+                        </div>
+                        <div class="w-8/12 font-light text-sm">
+                            <p>
+                                All prospective buyers are advised to preview, check the items and examine the conditions of each item before placing bids.
+                            </p>
+                            <p>
+                                Once you have carefully reviewed items and you're interested
+                            </p>
+                            <br>
+                            <p>
+                                Sign In to an existing account or Register a new account to place bids through our website.
+                            </p>
+                            <br>
+                            <p>
+                                During the registration process, you will be required to provide the following details: -
+                            </p>
+                            <ul class="list-disc">
+                                <li>Phone number</li>
+                                <li>Address</li>
+                                <li>A means of Identification such driver’s license number.</li>
+                            </ul>
+                            <p>
+                                If you are having difficulty accessing our account registration or login page, please call for assistance.
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[893px] max-w-full">
+                    <p class="text-black font-bold mb-5">Step 2</p>
+                    <div class="flex text-black bg-white py-12 px-9 gap-8">
+                        <div class="w-3/12">
+                            <img class="w-[210px] mb-4" src="images/speedometer.png">
+                            <h5 class="font-extrabold text-xl max-w-[210px]">Win a Vehicle Or Recieve Bids for your Vehicle</h5>
+                        </div>
+                        <div class="w-8/12 font-light text-sm">
+                            <p>
+                                The bidding will begin at a price appropriate to the seller's reserve.
+                            </p>
+                            <p>
+                                If the highest bid meets the seller reserve then the bidder will be declared the winner of the item after the seller's approval.
+                            </p>
+                            <br>
+                            <p>
+                                Once we declare that an item is sold, we cannot reopen the bidding.
+                            </p>
+                            <br>
+                            <p>
+                                An item(s) can be withdrawn for lack of inappropriate bids. If an item is withdrawn from the auction it will be offered again only by the company’s discretion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black w-full text-white py-14 text-center">
+            <p class="mb-1 text-sm">With just a few clicks, you are ready to go</p>
+            <h3 class="mb-8 font-bold text-[42px] leading-normal">Convinced to Try?</h3>
+            <a class="bg-transparent border text-sm border-white hover:border-brand-blue px-8 py-4 cursor-pointer hover:bg-brand-blue hover:text-white transition-all duration-300 ease-out">Register Now</a>
+        </section>
+
+        <section class="py-16 px-16">
+            <p class="mb-2">Browse Inventory</p>
+            <h2 class="text-brand-blue font-bold text-[32px] mb-10">Autodent List</h2>
+            <p class="text-lg font-bold mb-5">Models</p>
+            <div class="flex gap-12 flex-wrap text-sm">
+                <p>Acura <span class="font-bold">(2,472)</span></p>
+                <p>Audi <span class="font-bold">(400)</span></p>
+                <p>BMW <span class="font-bold">(20)</span></p>
+                <p>Buick <span class="font-bold">(0)</span></p>
+                <p>Cadillacc <span class="font-bold">(0)</span></p>
+                <p>Chevrolet <span class="font-bold">(0)</span></p>
+                <p>Chrysler <span class="font-bold">(0)</span></p>
+                <p>Dodge <span class="font-bold">(0)</span></p>
+                <p>Ford <span class="font-bold">(0)</span></p>
+                <p>Freightliner <span class="font-bold">(0)</span></p>
+                <p>GMC <span class="font-bold">(0)</span></p>
+                <p>Harley <span class="font-bold">(0)</span></p>
+                <p>Honda <span class="font-bold">(0)</span></p>
+                <p>Hummer <span class="font-bold">(0)</span></p>
+                <p>Hyundai <span class="font-bold">(0)</span></p>
+                <p>Infiniti <span class="font-bold">(0)</span></p>
+                <p>International <span class="font-bold">(0)</span></p>
+                <p>Isuzu <span class="font-bold">(0)</span></p>
+                <p>Jaguar <span class="font-bold">(0)</span></p>
+                <p>Jeep <span class="font-bold">(0)</span></p>
+                <p>Kia <span class="font-bold">(0)</span></p>
+                <p>Lamborghini <span class="font-bold">(0)</span></p>
+                <p>Land Rover <span class="font-bold">(0)</span></p>
+                <p>Lexus <span class="font-bold">(0)</span></p>
+                <p>Lincoln <span class="font-bold">(0)</span></p>
+                <p>Lotus <span class="font-bold">(0)</span></p>
+                <p>Maserati <span class="font-bold">(0)</span></p>
+                <p>Mada <span class="font-bold">(0)</span></p>
+                <p>Mclaren <span class="font-bold">(0)</span></p>
+                <p>Mercedes-Benz <span class="font-bold">(0)</span></p>
+                <p>Mini <span class="font-bold">(0)</span></p>
+                <p>Mitsubishi <span class="font-bold">(0)</span></p>
+                <p>Nissan <span class="font-bold">(0)</span></p>
+                <p>Polaris <span class="font-bold">(0)</span></p>
+                <p>Pontiac <span class="font-bold">(0)</span></p>
+                <p>Porsche <span class="font-bold">(0)</span></p>
+                <p>Ram <span class="font-bold">(0)</span></p>
+                <p>Rolls-Royce <span class="font-bold">(0)</span></p>
+                <p>Saab <span class="font-bold">(0)</span></p>
+                <p>Scion <span class="font-bold">(0)</span></p>
+                <p>Subaru <span class="font-bold">(0)</span></p>
+                <p>Suzuki <span class="font-bold">(0)</span></p>
+                <p>Tesla <span class="font-bold">(0)</span></p>
+                <p>Toyota <span class="font-bold">(0)</span></p>
+                <p>Volkswagen <span class="font-bold">(0)</span></p>
+                <p>Volvo <span class="font-bold">(0)</span></p>
+                <p>Yamaha <span class="font-bold">(0)</span></p>
+            </div>
+        </section>
+
+        <section class="text-white pl-12 xxl:px-16 py-10 flex items-center" style="background: linear-gradient(268.14deg, #0066FF -35.51%, #0015D6 44.41%, #0A0F79 72.79%, #0E0046 114.19%);">
+            <h2 class="font-bold mr-4 xxl:mr-9 text-[50px] leading-[50px]"><span class="text-[#FF9900] text-[40px]">Autodent</span><br> Bid for Win</h2>
+            <span class="block mr-5 xxl:mr-9 h-24 border-white border-x border-opacity-40"></span>
+            <div class="flex gap-4 flex-col">
+                <p>No hassle with our AI systems</p>
+                <p>Fast, secure and reliable</p>
+                <p>Immediate Documentation</p>
+            </div>
+            <img class="" src="images/cars-view.png">
+        </section>
+    </main>
+
+    <footer class="bg-black text-white">
+        <div class="flex px-16">
+            <div class="w-5/12 pr-16 pt-7 pb-10 border-r border-dashed border-white border-opacity-30">
+                <img class="w-[151px]" src="images/logo.svg">
+                <p class="font-light text-sm">Autodent is a trustworthy, reliable and cost - effective online marketplace for various range of high-quality vehicles for auction. We provide great support for every customer during their purchasing decision because we believe every customer deserve a right to own a car for their comfort.</p>
+                <div class="flex gap-5 mt-6">
+                    <a class="bg-brand-blue p-2 border rounded-full flex items-center justify-center border-brand-blue"><img src="images/facebook.svg"></a>
+                    <a class="bg-brand-blue p-2 border rounded-full flex items-center justify-center border-brand-blue"><img src="images/twitter.svg"></a>
+                    <a class="bg-brand-blue p-2 border rounded-full flex items-center justify-center border-brand-blue"><img src="images/google-plus.svg"></a>
+                </div>
+            </div>
+            <div class="w-7/12 pl-20 flex items-center">
+                <div class="w-full">
+                    <p class="text-brand-blue mb-1">Subscribe</p>
+                    <h2 class="font-bold text-[32px] mb-5 leading-normal">Don’t miss out on<br> our newsletters</h2>
+                    <form class="w-full items-center flex">
+                        <div class="relative w-11/12">
+                            <input class="bg-transparent py-5 text-sm border border-white focus:outline-none px-6 max-w-full w-full focus:border-brand-blue transition-all duration-300 ease-out" placeholder="Enter Email Address" type="email">
+                            <!-- <img class="absolute right-10 top-1/2 translate-x-1/2 -translate-y-1/2" src="images/search.png"> -->
+                            <a class="flex items-center justify-center mb-[10px] text-white w-40 gap-4 bg-brand-blue px-5 py-3 text-sm cursor-pointer border border-transparent hover:border-brand-blue hover:text-brand-blue hover:bg-white transition-all duration-300 ease-out absolute right-24 top-1/2 translate-x-1/2 -translate-y-1/2">Subscribe</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pt-12 pb-7 border-t border-dashed border-white border-opacity-30 px-16">
+            <div class="flex justify-between gap-20 mb-16">
+                <div class="flex flex-col gap-4">
+                    <a class="text-brand-blue font-bold mb-1">Links</a>
+                    <a class="text-sm">Home</a>
+                    <a class="text-sm">Services</a>
+                    <a class="text-sm">Contact</a>
+                    <a class="text-sm">Our Services</a>
+                    <a class="text-sm">Contact Us</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a class="text-brand-blue font-bold mb-1">Company</a>
+                    <a class="text-sm">About</a>
+                    <a class="text-sm">Portfolio</a>
+                    <a class="text-sm">About Us</a>
+                    <a class="text-sm">Expert Team</a>
+                    <a class="text-sm">Latest News</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a class="text-brand-blue font-bold mb-1">Services</a>
+                    <a class="text-sm">Home</a>
+                    <a class="text-sm">Services</a>
+                    <a class="text-sm">Contact</a>
+                    <a class="text-sm">Our Services</a>
+                    <a class="text-sm">Contact Us</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a class="text-brand-blue font-bold mb-1">Sitemap</a>
+                    <a class="text-sm">About</a>
+                    <a class="text-sm">Portfolio</a>
+                    <a class="text-sm">About Us</a>
+                    <a class="text-sm">Expert Team</a>
+                    <a class="text-sm">Latest News</a>
+                </div>
+                <div class="flex flex-col gap-4 text-sm">
+                    <a class="text-brand-blue font-bold mb-1">Contacts</a>
+                    <div>
+                        <p class="font-bold mb-1">Find Us</p>
+                        <p>1010 Avenue, sw 54321, chandigarh</p>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-1">Call Us</p>
+                        <p>98765432100</p>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-1">Mail Us</p>
+                        <p>mail@info.com</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm">Copyright © 2018, All Right Reserved <span class="text-brand-blue">Autodent</span></p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
