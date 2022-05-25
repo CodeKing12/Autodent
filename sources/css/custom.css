@@ -1,9 +1,14 @@
-.auction-slider .slick-track {
+.auction-slider .owl-stage {
     display: flex;
-    gap: 1px
+    gap: 2px
 }
 
 .featured-slider .slick-track {
     display: flex;
     gap: 65px;
+}
+
+.auction-slider .owl-item img {
+    display: unset !important;
+    width: auto !important;
 }

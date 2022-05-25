@@ -690,6 +690,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 159px;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .w-\[86px\]{
   width: 86px;
 }
@@ -782,6 +786,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-11\/12{
   width: 91.666667%;
+}
+
+.w-\[130px\]{
+  width: 130px;
 }
 
 .min-w-max{

@@ -1,11 +1,23 @@
-$(".auction-slider").slick({
-    variableWidth: true,
-    infinite: false,
-    autoplay: true,
-    arrows: true,
-    prevArrow: "<img src='images/slider-right.svg' class='cursor-pointer rotate-180 w-10 next-arrow transition-all duration-100 ease-linear hover:duration-150'>",
-    nextArrow: "<img src='images/slider-right.svg' class='cursor-pointer w-10 next-arrow transition-all duration-100 ease-linear hover:duration-150'>",
-    appendArrows: ".slider-arrows"
+// $(".auction-slider").slick({
+//     variableWidth: true,
+//     infinite: false,
+//     autoplay: true,
+//     arrows: true,
+//     prevArrow: "<img src='images/slider-right.svg' class='cursor-pointer rotate-180 w-10 next-arrow transition-all duration-100 ease-linear hover:duration-150'>",
+//     nextArrow: "<img src='images/slider-right.svg' class='cursor-pointer w-10 next-arrow transition-all duration-100 ease-linear hover:duration-150'>",
+//     appendArrows: ".slider-arrows"
+// })
+
+$(".auction-slider").owlCarousel({
+    dots: false,
+    autoWidth: true,
+    nav: true,
+    rewind: true,
+    navText: [
+        "<img src='images/slider-right.svg' class='cursor-pointer rotate-180 w-10 next-arrow transition-all duration-100 ease-linear hover:duration-150'>",
+        "<img src='images/slider-right.svg' class='cursor-pointer w-10 next-arrow transition-all duration-100 ease-linear hover:duration-150'>"
+    ],
+    navContainer: ".slider-arrows"
 })
 
 $(".featured-slider").slick({
