@@ -12,9 +12,9 @@
 </head>
 <body class="font-poppins font-normal text-base">
     <header class="relative text-white before:right-0 before:absolute before:top-0 before:w-full before:h-full before:z-0 before:bg-black before:bg-opacity-60" style="background: url(images/header-bg.png);">
-        <nav class="flex justify-between items-center px-16 mb-24 relative z-10">
+        <nav class="flex justify-between items-center px-6 md:px-9 xl:px-16 mb-20 lg:mb-24 relative z-10">
             <img class="w-[86px]" src="images/logo.svg">
-            <div class="flex gap-8 text-sm">
+            <div class="hidden lg:flex gap-8 text-sm">
                 <a href="how-it-works.html">How it works</a>
                 <a href="auctions.html#">Auctions</a>
                 <a href="inventory.html#">Inventory</a>
@@ -22,29 +22,82 @@
                 <a href="services.html">Services</a>
             </div>
             <div class="flex gap-4">
-                <a class="bg-brand-blue px-5 py-2 text-sm cursor-pointer border border-transparent hover:border-white hover:bg-transparent transition-all duration-300 ease-out">Register</a>
-                <a class="bg-transparent border text-sm border-white px-6 py-2 cursor-pointer hover:bg-white hover:text-brand-blue transition-all duration-300 ease-out">Sign In</a>
+                <a class="hidden sm:flex bg-brand-blue px-5 py-2 text-sm cursor-pointer border border-transparent hover:border-white hover:bg-transparent transition-all duration-300 ease-out">Register</a>
+                <a class="hidden sm:flex second-btn bg-transparent border text-sm border-white px-6 py-2 cursor-pointer hover:bg-white hover:text-brand-blue transition-all duration-300 ease-out">Sign In</a>
+                <button class="toggle-btn cursor-pointer bg-none float-right border-none z-[800] right-9 xl:right-16 block lg:hidden">
+                    <div class="icon-bar1 bg-white my-[7px] mx-0 w-8 h-[2px] duration-500"></div>
+                    <div class="icon-bar2 bg-white my-[7px] mx-0 w-8 h-[2px] duration-500"></div>
+                    <div class="icon-bar3 bg-white my-[7px] mx-0 w-8 h-[2px] duration-500"></div>
+                </button>
             </div>
         </nav>
-        <div class="px-16 pb-20 flex relative justify-between z-10">
-            <div class="w-6/12">
-                <h1 class="mb-6 font-bold text-[62px] leading-[72px]"><span class="text-brand-blue">Autodent;</span><br> Luxury, Sport &<br> Heavy-duty</h1>
+        <div id="menu" class="w-0 h-full fixed top-0 right-0 bg-black bg-opacity-50">
+            <div class="bg-brand-blue pl-14 font-montserrat text-white z-0 w-0 opacity-0 h-full fixed right-0 top-0 overflow-hidden transition-all duration-500 flex flex-col items-start justify-center">
+                <!-- <a class="absolute top-3 right-8 hover:cursor-pointer" onclick="closeMenu()">
+                    <span class="material-symbols-outlined !text-4xl">
+                        close
+                    </span>
+                </a> -->
+                <ul class="mobile-nav-items opacity-100 disappear flex flex-col items-start gap-[30px]">
+                    <li onmouseenter="animateImg(this)" onmouseleave="disanimateImg(this)" class="font-semibold text-sm relative">
+                        <a class="flex flex-row gap-1 before:absolute hover:before:bg-white before:w-8 before:bg-white before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="index.html#">
+                            How it works
+                            <img class="w-6 ml-[6px]" src="images/tyre.svg">
+                        </a>
+                    </li>
+                    <li onmouseenter="animateImg(this)" onmouseleave="disanimateImg(this)" class="font-semibold text-sm relative sm:flex hidden">
+                        <a class="flex flex-row gap-1 before:absolute hover:before:bg-white before:w-8 before:bg-white before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="shop.html#">
+                            Auctions
+                            <img class="w-6 ml-[6px]" src="images/tyre.svg">
+                        </a>
+                    </li>
+                    <li onmouseenter="animateImg(this)" onmouseleave="disanimateImg(this)" class="font-semibold text-sm relative flex md:hidden">
+                        <a class="flex flex-row gap-1 before:absolute hover:before:bg-white before:w-8 before:bg-white before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="shop.html#">
+                            Inventory
+                            <img class="w-6 ml-[6px]" src="images/tyre.svg">
+                        </a>
+                    </li>
+                    <li onmouseenter="animateImg(this)" onmouseleave="disanimateImg(this)" class="font-semibold text-sm relative">
+                        <a class="flex flex-row gap-1 before:absolute hover:before:bg-white before:w-8 before:bg-white before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="demo.html#">
+                            Our Pricing
+                            <img class="w-6 ml-[6px]" src="images/tyre.svg">
+                        </a>
+                    </li>
+                    <li onmouseenter="animateImg(this)" onmouseleave="disanimateImg(this)" class="font-semibold text-sm relative">
+                        <a class="flex flex-row gap-1 before:absolute hover:before:bg-white before:w-8 before:bg-white before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="demo.html#">
+                            Services
+                            <img class="w-6 ml-[6px]" src="images/tyre.svg">
+                        </a>
+                    </li>
+                    <li class="font-semibold text-sm relative mb-4 mt-2">
+                        <a class="w-28 bg-transparent border text-sm border-white px-6 py-2 cursor-pointer hover:bg-white hover:text-brand-blue transition-all duration-300 ease-out">Register</a>
+                    </li>
+                    <li class="font-semibold text-sm relative flex lg:hidden -mt-5">
+                        <a class="w-28 bg-transparent border text-sm border-white px-6 py-2 cursor-pointer hover:bg-white hover:text-brand-blue transition-all duration-300 ease-out">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-5 md:px-9 xl:px-16 pb-20 flex flex-col md:flex-row relative justify-between z-10">
+            <div class="md:w-6/12">
+                <h1 class="mb-6 font-bold text-4xl leading-snug lg:text-5xl xl:text-[62px] xl:leading-[72px]"><span class="text-brand-blue">Autodent;</span><br> Luxury, Sport &<br> Heavy-duty</h1>
                 <p class="font-light mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames eget sem viverra nunc dui consequat et. Eget sit urna consectetur sem non massa. Mus mauris, vitae et ut cras cras lacus risus cras.</p>
-                <a class="flex w-max gap-4 bg-brand-blue px-6 py-4 text-sm cursor-pointer border-2 border-transparent hover:border-white hover:bg-transparent transition-all duration-300 ease-out">
+                <a class="flex w-max gap-4 mb-4 lg:mb-0 bg-brand-blue px-6 py-4 text-sm cursor-pointer border-2 border-transparent hover:border-white hover:bg-transparent transition-all duration-300 ease-out">
                     Start Bidding
                     <img src="images/right-arrow.svg">
                 </a>
             </div>
-            <form class="w-5/12 items-center flex">
-                <div class="relative">
-                    <input class="bg-transparent py-5 border border-white focus:outline-none px-6 max-w-full w-[490px] focus:border-brand-blue transition-all duration-300 ease-out" placeholder="Search Inventory by Make, Model, VIN and More..." type="text">
+            <form class="md:w-5/12 items-center flex">
+                <div class="relative max-w-full">
+                    <input class="block sm:hidden md:block xl:hidden bg-transparent py-5 border border-white focus:outline-none px-6 max-w-full w-[490px] focus:border-brand-blue transition-all duration-300 ease-out" placeholder="Search Inventory" type="text">
+                    <input class="hidden sm:block md:hidden xl:block bg-transparent py-5 border border-white focus:outline-none px-6 max-w-full w-[490px] focus:border-brand-blue transition-all duration-300 ease-out" placeholder="Search Inventory by Make, Model, VIN and More..." type="text">
                     <img class="absolute right-10 top-1/2 translate-x-1/2 -translate-y-1/2" src="images/search.png">
                 </div>
             </form>
         </div>
-        <div class="flex relative z-10 mb-8">
-            <p class="flex items-center w-52 pl-16 pr-12 bg-[#7C7C7C4D] bg-opacity-30 backdrop-blur-sm font-semibold py-6 text-[#FF9900] min-w-max">Live Auctions</p>
-            <div class="slider-arrows absolute z-10 -top-[50px] right-8 flex gap-2"></div>
+        <div class="flex flex-col md:flex-row relative z-10 mb-8 mt-5 sm:mt-0">
+            <p class="hidden sm:flex items-center w-52 pl-16 pr-12 bg-[#7C7C7C4D] bg-opacity-30 backdrop-blur-sm font-semibold py-6 text-[#FF9900] min-w-max">Live Auctions</p>
+            <div class="slider-arrows absolute z-10 -top-[50px] sm:top-4 md:-top-[50px] sm:right-8 right-4 flex gap-2"></div>
             <div class="auction-slider owl-carousel overflow-hidden">
                 <div class="bg-brand-blue !flex items-center pl-4 px-5 h-full w-max">
                     <img class="h-20 w-auto mr-[2px] ml-2" src="images/car-1.png">
@@ -120,7 +173,7 @@
     <main class="text-black pt-6">
         <section class="px-16 py-16 mb-20">
             <div class="flex">
-                <h2 class="text-brand-blue font-bold text-[42px] mb-12">Featured Vehicles</h2>
+                <h2 class="text-brand-blue font-bold text-[42px] leading-snug mb-12">Featured Vehicles</h2>
             </div>
             <div class="featured-slider">
                 <div>
@@ -474,7 +527,7 @@
             <a class="bg-transparent border text-sm border-white hover:border-brand-blue px-8 py-4 cursor-pointer hover:bg-brand-blue hover:text-white transition-all duration-300 ease-out">Register Now</a>
         </section>
 
-        <section class="py-16 px-16">
+        <section class="py-16 px-5 md:px-9 xl:px-16">
             <p class="mb-2">Browse Inventory</p>
             <h2 class="text-brand-blue font-bold text-[32px] mb-10">Autodent List</h2>
             <p class="text-lg font-bold mb-5">Models</p>
@@ -529,10 +582,10 @@
             </div>
         </section>
 
-        <section class="text-white pl-12 xxl:px-16 py-10 flex items-center" style="background: linear-gradient(268.14deg, #0066FF -35.51%, #0015D6 44.41%, #0A0F79 72.79%, #0E0046 114.19%);">
-            <h2 class="font-bold mr-4 xxl:mr-9 text-[50px] leading-[50px]"><span class="text-[#FF9900] text-[40px]">Autodent</span><br> Bid for Win</h2>
-            <span class="block mr-5 xxl:mr-9 h-24 border-white border-x border-opacity-40"></span>
-            <div class="flex gap-4 flex-col">
+        <section class="text-white pl-12 px-5 md:px-9 xxl:px-16 py-10 flex flex-col xl:flex-row items-center" style="background: linear-gradient(268.14deg, #0066FF -35.51%, #0015D6 44.41%, #0A0F79 72.79%, #0E0046 114.19%);">
+            <h2 class="font-bold mr-4 xxl:mr-9 text-[50px] text-center sm:text-left leading-[50px]"><span class="text-[#FF9900] text-[40px]">Autodent</span><br class="hidden xl:block"> Bid for Win</h2>
+            <span class="block mt-5 mb-5 xl:mr-5 xxl:mr-9 xl:h-24 border-white border-x border-opacity-40"></span>
+            <div class="flex gap-6 xl:gap-4 flex-col sm:flex-row xl:flex-col">
                 <p>No hassle with our AI systems</p>
                 <p>Fast, secure and reliable</p>
                 <p>Immediate Documentation</p>
@@ -542,8 +595,8 @@
     </main>
 
     <footer class="bg-black text-white">
-        <div class="flex px-16">
-            <div class="w-5/12 pr-16 pt-7 pb-10 border-r border-dashed border-white border-opacity-30">
+        <div class="flex flex-col gap-6 lg:gap-0 lg:flex-row px-5 md:px-9 xl:px-16 mb-9 lg:mb-0">
+            <div class="w-full lg:w-5/12 md:pr-16 pt-7 pb-10 lg:border-r border-dashed border-white border-opacity-30">
                 <img class="w-[151px]" src="images/logo.svg">
                 <p class="font-light text-sm">Autodent is a trustworthy, reliable and cost - effective online marketplace for various range of high-quality vehicles for auction. We provide great support for every customer during their purchasing decision because we believe every customer deserve a right to own a car for their comfort.</p>
                 <div class="flex gap-5 mt-6">
@@ -552,7 +605,7 @@
                     <a class="bg-brand-blue p-2 border rounded-full flex items-center justify-center border-brand-blue"><img src="images/google-plus.svg"></a>
                 </div>
             </div>
-            <div class="w-7/12 pl-20 flex items-center">
+            <div class="w-full lg:w-7/12 lg:pl-20 flex items-center">
                 <div class="w-full">
                     <p class="text-brand-blue mb-1">Subscribe</p>
                     <h2 class="font-bold text-[32px] mb-5 leading-normal">Don’t miss out on<br> our newsletters</h2>
@@ -566,8 +619,8 @@
                 </div>
             </div>
         </div>
-        <div class="pt-12 pb-7 border-t border-dashed border-white border-opacity-30 px-16">
-            <div class="flex justify-between gap-20 mb-16">
+        <div class="pt-12 pb-7 border-t border-dashed border-white border-opacity-30 px-5 md:px-9 xl:px-16">
+            <div class="flex flex-wrap justify-between gap-20 mb-16">
                 <div class="flex flex-col gap-4">
                     <a class="text-brand-blue font-bold mb-1">Links</a>
                     <a class="text-sm">Home</a>

@@ -12,3 +12,47 @@
     display: unset !important;
     width: auto !important;
 }
+
+
+.rotate-icons .icon-bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+}
+.rotate-icons .icon-bar2 {
+  opacity: 0;
+}
+.rotate-icons .icon-bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.show-menu {
+    width: 100%;
+    z-index: 700;
+    /* position: relative; */
+}
+
+.show-menu > div {
+    width: 300px;
+    opacity: 1;
+}
+
+.hidden-nav {
+    position: unset;
+}
+
+.rotate-icons {
+    position: fixed;
+}
+
+.move-img {
+    opacity: 1;
+    transform: translateX(30px) rotate(360deg);
+    transition: all 1s ease, transform 1s 0.1s ease-out;
+}
+
+.undo-transform {
+    /* opacity: 0; */
+    transform: translateX(0) rotate(0deg);
+    transition: all 1s ease;
+}
