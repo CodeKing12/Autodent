@@ -75,10 +75,12 @@ $(".featured-slider").slick({
 })
 
 $(".steps-slider").slick({
-    variableWidth: true,
+    // variableWidth: true,
     infinite: false,
     // autoplay: true,
     arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     prevArrow: "<button class='flex bg-[#D8D8D8] absolute top-1/2 translate-x-1/2 -translate-y-1/2 -left-14 w-8 h-12 px-1 items-center justify-center py-[6px] next-arrow text-white hover:bg-brand-blue transition-all duration-100 ease-linear hover:duration-150 group'><img src='images/left-caret.svg'></button>",
     nextArrow: "<button class='flex bg-[#D8D8D8] absolute top-1/2 translate-x-1/2 -translate-y-1/2 -right-10 w-8 h-12 px-1 items-center justify-center py-[6px] next-arrow text-white hover:bg-brand-blue transition-all duration-100 ease-linear hover:duration-150 group'><img src='images/right-caret.svg'></button>"
 })
