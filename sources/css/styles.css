@@ -546,6 +546,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -3.5rem;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.left-3{
+  left: 0.75rem;
+}
+
+.-left-3{
+  left: -0.75rem;
+}
+
+.-left-4{
+  left: -1rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -570,6 +590,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-0{
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-20{
@@ -1575,6 +1600,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px){
   .md\:-top-\[50px\]{
     top: -50px;
+  }
+
+  .md\:left-0{
+    left: 0px;
   }
 
   .md\:block{
