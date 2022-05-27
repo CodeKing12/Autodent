@@ -20,6 +20,50 @@ $(".auction-slider").owlCarousel({
     navContainer: ".slider-arrows"
 })
 
+// $(".featured-slider").owlCarousel({
+//     // variableWidth: true,
+//     // infinite: false,
+//     // autoplay: true,
+//     arrows: true,
+//     center: true,
+//     items: 1,
+//     navText: [
+//         "<button class='flex bg-[#D8D8D8] absolute top-20 -left-10 w-8 h-12 px-1 items-center justify-center py-[6px] next-arrow text-white hover:bg-brand-blue transition-all duration-100 ease-linear hover:duration-150 group'><img src='images/left-caret.svg'></button>",
+//         "<button class='flex bg-[#D8D8D8] absolute top-20 -right-10 w-8 h-12 px-1 items-center justify-center py-[6px] next-arrow text-white hover:bg-brand-blue transition-all duration-100 ease-linear hover:duration-150 group'><img src='images/right-caret.svg'></button>"
+//     ],
+//     responsive: {
+//             350: {
+//                 items: 1,
+//                 slideBy: 1
+//             },
+
+//             576: {
+//                 items: 2,
+//                 slideBy: 1
+//             },
+
+//             768: {
+//                 items: 3,
+//                 slideBy: 2
+//             },
+
+//             992: {
+//                 items: 4,
+//                 slideBy: 3
+//             },
+
+//             1200: {
+//                 items: 4,
+//                 slideBy: 3
+//             },
+
+//             1400: {
+//                 items: 5,
+//                 slideBy: 4
+//             },
+//     }
+// })
+
 $(".featured-slider").slick({
     variableWidth: true,
     infinite: false,
@@ -40,7 +84,8 @@ $(".featured-slider").slick({
             breakpoint: 576,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                centerMode: false
             }
         },
         {

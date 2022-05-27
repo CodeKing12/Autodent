@@ -8,6 +8,11 @@
     gap: 65px;
 }
 
+/* .featured-slider .owl-stage {
+    display: flex;
+    gap: 65px;
+} */
+
 .auction-slider .owl-item img {
     display: unset !important;
     width: auto !important;
